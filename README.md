@@ -1,4 +1,4 @@
-`archivy-espial` allows you to integrate [Espial's](https://github.com/Uzay-G/espial) automatic organization and discovery between notes inside your [Archivy](https://archivy.github.io).
+`archivy-espial` allows you to integrate [Espial's](https://github.com/Uzay-G/espial) automatic organization and note discovery inside [Archivy](https://archivy.github.io).
 
 ## Features:
 
