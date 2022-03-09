@@ -2,7 +2,7 @@ let extDiv = document.createElement("div");
 let hitsUl = document.createElement("ul");
 let tagsUl = document.createElement("ul");
 document.body.appendChild(extDiv);
-extDiv.style = "position: fixed; right: 10px; bottom: 10px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; min-width: 100px; min-height: 100px; max-width: 300px; max-height: 300px; border: solid #141E27 1px; background: white; overflow-wrap: break-word; overflow-y: auto;"
+extDiv.style = "position: fixed; right: 10px; bottom: 10px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; min-width: 100px; min-height: 100px; max-width: 300px; max-height: 300px; border: solid #141E27 1px; background: white; overflow-wrap: break-word; overflow-y: auto; z-index: 10"
 let sim_btn = document.createElement("button");
 let btn_style = "margin: 10px; border: none; background: none;"
 sim_btn.style = btn_style;
@@ -24,7 +24,7 @@ function addText(text) {
   let open = editorOpen();
   if (open)
   {
-    editor.codemirror.replaceSelection(text);
+    editor.codemirror.replaceSelection(text + " ");
   }
   else {
     editor.codemirror.replaceRange("\n\n", text, {line: Infinity});
@@ -93,7 +93,8 @@ conc_btn.onclick = async function() {
   btn.style.margin = "2px";
     btn.textContent = "Add Link";
     btn.onclick = () => {
-    addText(`#${hit.title}#`);
+    addText(`#${hit}#`);
     }
+  li.appendChild(btn);
   })
 }

@@ -1,6 +1,15 @@
 `archivy-espial` allows you to integrate [Espial's](https://github.com/Uzay-G/espial) automatic organization and note discovery inside [Archivy](https://archivy.github.io).
 
+How Archivy-Espial allows you to auto organize and link your thoughts:
+
+![archivy-espial demo](archivy-espial.gif)
+
 ## Features:
+
+
+Espial's features:
+
+![espial demo](https://github.com/Uzay-G/espial/blob/main/img/espial.gif)
 
 - Auto generated knowledge graph
 - get suggestions for tags to add and documents to link to the current document. 
